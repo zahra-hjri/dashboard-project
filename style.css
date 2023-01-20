@@ -29,6 +29,8 @@ body {
 .container {
     padding: 0 2rem;
     margin-left: auto;
+    display: grid;
+    grid-template-columns: 20% 53% 27%;
 }
 
 .menu {
@@ -107,13 +109,76 @@ body {
 
 .number-bold {
     background-color: rgb(240, 77, 213);
-    border-radius: 50%;
+    border-radius: 48%;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
-    margin-left: 4rem;
+    margin-left: 5rem;
 }
 
 .menu__lists--item-title {
     font-size: 1.3rem;
     font-weight: 800;
+}
+
+.content {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.content__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__top--button {
+    width: 10rem;
+    height: 4.5rem;
+    cursor: pointer;
+    background-color: #7862eb;
+    border-radius: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+.content__top--button-icon {
+    width: 3.5rem;
+    height: 2rem;
+    /* margin-top: 1.3rem; */
+    filter: invert(90%) hue-rotate(196deg);
+}
+
+.content__top--button-text {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    /* padding: 1rem; */
+    /* margin-top: 1rem; */
+}
+
+.content__top--user {
+    /* display: flex; */
+    margin-left: 35rem;
+    align-items: center;
+
+}
+
+.content__top--user-icon {
+    /* margin-top: 1rem; */
+    width: 3rem;
+    filter: invert(90%) hue-rotate(196deg);
+
+}
+
+.content__top--user-text {
+    color: #d0d3e7;
+    margin-top: -5rem;
+}
+
+.content__top--user-img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
 }
