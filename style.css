@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* font-size: 10px; */
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: #141627;
+    background-image: url(./images/map.png);
+    font-family: "Roboto", sans-serif;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    padding: 0 2rem;
+    margin-left: auto;
+}
+
+.menu {
+    width: 25rem;
+    height: 100vh;
+    margin-right: 3rem;
+    color: rgb(206, 199, 199);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.linear-color {
+    z-index: -1;
+    border-radius: 100%;
+    position: absolute;
+    right: -24rem;
+    top: 4rem;
+    width: 30rem;
+    height: 30rem;
+    background: linear-gradient(180deg,
+            rgba(57, 31, 130, 1) 0%,
+            rgba(119, 35, 117, 1) 100%);
+    filter: blur(50px);
+
+}
+
+
+
+.menu__top {
+    display: flex;
+
+}
+
+.menu__top--title {
+    font-weight: 800;
+    margin-top: 3rem;
+    color: rgb(206, 199, 199);
+
+}
+
+.menu__top--icon {
+    float: right;
+    margin-top: 3rem;
+    margin-left: 16rem;
+    cursor: pointer;
+
+}
+
+.menu__lists {
+    margin: 8rem 0;
+}
+
+.menu__lists--icon {
+    width: 2.5rem;
+    margin: 0 1.5rem;
+
+    filter: invert(43%) sepia(9%) saturate(1339%) hue-rotate(196deg) brightness(91%) contrast(84%);
+}
+
+
+.menu__lists--item {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    padding: 1.3rem;
+    cursor: pointer;
+
+}
+
+
+.menu__lists--item-active,
+.menu__lists--item:hover {
+    background-color: #3e3376;
+    color: #d0d3e7;
+    border-radius: 1.5rem;
+}
+
+.number-bold {
+    background-color: rgb(240, 77, 213);
+    border-radius: 50%;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-left: 4rem;
+}
+
+.menu__lists--item-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
